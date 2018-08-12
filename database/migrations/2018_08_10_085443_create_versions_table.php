@@ -18,7 +18,7 @@ class CreateVersionsTable extends Migration {
 
 			$table->increments('id')->unsigned();
             $table->integer('project_id')->unsigned()->index();
-            $table->varchar('version', 4)->index();
+            $table->string('version', 4)->index();
 		});
 	}
 

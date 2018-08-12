@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('name', 255);
             $table->string('email', 255)->unique()->index();
             $table->string('password', 255);
-            $table->tinyInteger('role', 1)->default(2)->index();
+            $table->tinyInteger('role');
             $table->tinyInteger('active')->nullable()->unsigned()->default(1)->index();
 
         });
