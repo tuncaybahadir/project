@@ -1,0 +1,38 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "laravel/framework": "5.0.30",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "classmap": [
+      "database",
+      "app/Http/Controllers",
+      "app/Models",
+      "app/Libraries"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Helper.php"
+    ]
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/TestCase.php"
+    ]
+  },
+  "scripts": {
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
+}
